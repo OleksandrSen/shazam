@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Start Template">
+	<meta name="author" content="Admin">
+	<title>Shazam</title>
+
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header class="header">
+		<nav class="navigation">
+			<svg class="logopic">
+				<use xlink:href="images/icons-sprite.svg#logoblack"></use>
+			</svg>
+			<i class="burger-menu"><span></span></i>
+			<ul class="menu">
+				<li class="menu__item">
+					<a href="#" class="menu__link">my library</a>
+				</li>
+				<li class="menu__item">
+					<a href="#" class="menu__link">apps</a>
+				</li>
+				<li class="menu__item">
+					<a href="#" class="menu__link">charts</a>
+				</li>
+			</ul>
+			<input type="checkbox" id="menu" class="navigation__input">
+			<label for="menu" class="navigation__menu"></label>
+		</nav>
+		<div class="search">
+			<input class="searcharea" type="text" placeholder="Search for music">
+			<button>
+				<svg class="searchpic">
+					<use xlink:href="images/icons-sprite.svg#search"></use>
+				</svg>
+			</button>
+		</div>
+	</header>
+	<div class="container">
+		<div class="title">
+			<div class="circ-play">
+				<svg class="title__pic">
+					<use xlink:href="images/icons-sprite.svg#play"></use>
+				</svg>
+			</div>
+			<h1 class="title__top">Ukraine Top 200</h1>
+			<div class="title__select">
+				<select class="select" name="country" id="">
+					<option>Country</option>
+					<option value="Ukraine">Ukraine</option>
+					<option value="Russia">Russia</option>
+					<option value="USA">USA</option>
+				</select>
+				<select class="select" name="city" id="">
+					<option>City</option>
+					<option value="Kyiv">Kyiv</option>
+					<option value="Poltava">Poltava</option>
+					<option value="Kharkiv">Kharkiv</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row music">
+			<div class="col-12 col-md-7 music__list">
+				<ul>
+					<li class="music__list__item">
+						<div class="music__list-number">1</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t481823877-b1503213868_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">August</h4>
+							<h4 class="author">Intelligency</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">2</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t503576063-b1499386265_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Blinding Lights</h4>
+							<h4 class="author">The Weekend</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">3</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t469862641-b1479678552_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Roses (Imanbek Remix)</h4>
+							<h4 class="author">SAINt JHN</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">4</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t52865487-b1274315362_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Astronomia</h4>
+							<h4 class="author">Tony Igy</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">5</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t466040067-b1475546088_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Dance Monkey</h4>
+							<h4 class="author">Tones And I</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">6</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t504029260-b1499112594_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Shut Up Chicken</h4>
+							<h4 class="author">El Capon</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">7</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t473848807-b1478129158_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Clandestina</h4>
+							<h4 class="author">FILV & Edmofo</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">8</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t360553122-b1374219174_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Cumberland Gap</h4>
+							<h4 class="author">David Rawlings</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">9</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t504306206-b1501705494_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Intihask</h4>
+							<h4 class="author">Hafex</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">10</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t328780479-b1274300446_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Astronomia</h4>
+							<h4 class="author">Vicetone & Tony Igy</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">11</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t89524829-b648312243_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Мадам</h4>
+							<h4 class="author">JONY & Andro</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">12</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t509324065-b1500544762_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Nonstop</h4>
+							<h4 class="author">Drake</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">13</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t509415112-b1504500040_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Кайфанули</h4>
+							<h4 class="author">Ганвест</h4>
+						</div>
+					</li>
+					<li class="music__list__item">
+						<div class="music__list-number">14</div>
+						<img class="music__list__image"
+							src="https://images.shazam.com/coverart/t510905269-b1503336119_s400.jpg" width="70px">
+						<div class="music__list-name">
+							<h4 class="name">Tongue</h4>
+							<h4 class="author">Maribou State Feat. Holly Walker</h4>
+						</div>
+					</li>
+				</ul>
+				<button class="showmore">
+					<p class="button-text">Показать больше</p>
+				</button>
+			</div>
+			<div class="col-12 col-md-4 music__charts">
+				<h2 class="main-title">Charts</h2>
+				<div class="music__charts__us">
+					<h3 class="title-chart">United States</h3>
+					<h4 class="subtitle-chart">Discovery</h4>
+				</div>
+				<div class="music__charts__ger">
+					<h3 class="title-chart">Germany</h3>
+					<h4 class="subtitle-chart">Top 200</h4>
+				</div>
+				<div class="music__charts__global">
+					<h3 class="title-chart">Global</h3>
+					<h4 class="subtitle-chart">Top 200</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row footer__info">
+				<div class="col-12 col-md-6 footer__info-logo">
+					<svg class="logo-footer">
+						<use xlink:href="images/icons-sprite.svg#logo"></use>
+					</svg>
+					<div class="lang">
+						<select class="select-lang" name="language" id="">
+							<option>Language</option>
+							<option value="Ukr">Українська</option>
+							<option value="Rus">Російська</option>
+							<option value="US">Англійська</option>
+						</select>
+					</div>
+					<div class="app">
+						<img class="appstore" src="images/googl.JPG" width="110px" height="38px">
+						<img class="appstore" src="images/apple.JPG" width="110px" height="38px">
+					</div>
+				</div>
+				<div class="col-6 col-md-3 footer__info__company">
+					<ul>
+						<li class="footer__info__company-item">Компания</li>
+						<li class="footer__info__company-item">О нас</li>
+						<li class="footer__info__company-item">Карьера</li>
+						<li class="footer__info__company-item">Справка</li>
+					</ul>
+				</div>
+				<div class="col-6 col-md-3 footer__info-privacy">
+					<ul>
+						<li class="footer__info__privacy-item">Юридическая информация</li>
+						<li class="footer__info__privacy-item">Условия</li>
+						<li class="footer__info__privacy-item">Приватность</li>
+						<li class="footer__info__privacy-item">Управление данными</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

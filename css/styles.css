@@ -1,0 +1,371 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body, html {
+  min-height: 100%;
+  width: 100%;
+}
+
+.clear::after, .clear::before {
+  content: " ";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 20px 20px 15px 40px;
+  border-bottom: 1px solid lightgrey;
+  background: white;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logopic {
+  width: 120px;
+  height: 34px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 15%;
+}
+
+.menu__link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  color: #242424;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+.menu__link:hover {
+  color: #05adca;
+}
+
+.navigation__input {
+  display: none;
+}
+
+.search {
+  position: absolute;
+  right: 0;
+  top: 30%;
+}
+
+.searcharea {
+  background: lightgrey;
+  color: grey;
+  padding: 10px 10px;
+  border-radius: 20px;
+  width: 370px;
+}
+
+.searchpic {
+  width: 32px;
+  height: 22px;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 120px 30px 110px;
+  border-bottom: 1px solid lightgrey;
+  position: relative;
+}
+
+.title__top {
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.title .circ-play {
+  background: #0088ff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.title__pic {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 33%;
+  left: 37%;
+  fill: white;
+}
+
+.title__select {
+  position: absolute;
+  top: 75%;
+}
+
+.title .select {
+  width: 280px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  padding: 10px 10px 10px 20px;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.music {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 60px;
+}
+
+.music__charts__us {
+  background: url("../images/chart-discovery.png") no-repeat;
+  background-size: contain;
+  width: 340px;
+  height: 160px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.music__charts__us .title-chart {
+  color: white;
+}
+
+.music__charts__ger {
+  background: url("../images/chart-country.png") no-repeat;
+  background-size: contain;
+  width: 340px;
+  height: 160px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.music__charts__ger .title-chart {
+  color: blue;
+}
+
+.music__charts__global {
+  background: url("../images/chart-global.png") no-repeat;
+  background-size: contain;
+  width: 340px;
+  height: 160px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.music__charts__global .title-chart {
+  color: #47b3f1;
+}
+
+.music__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.music__list__item .name {
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+
+.music__list__item .author {
+  padding-top: 4px;
+  color: #949494;
+  font-size: 16px;
+}
+
+.music__list-number {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.music__list__image {
+  margin: 0 20px;
+}
+
+.showmore {
+  margin-top: 40px;
+  background: #0088ff;
+  position: relative;
+  left: 40%;
+}
+
+.button-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 17px 30px;
+}
+
+.main-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.title-chart {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.subtitle-chart {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer {
+  margin-top: 40px;
+  background: black;
+  color: white;
+}
+
+.footer__info {
+  padding-top: 40px;
+}
+
+.lang {
+  margin: 20px 0;
+}
+
+.select-lang {
+  background: black;
+  color: lightgrey;
+  border: 1px solid lightgrey;
+  width: 250px;
+  padding: 5px 10px;
+}
+
+.logo-footer {
+  fill: white;
+  width: 150px;
+  height: 50px;
+}
+
+.app {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.appstore {
+  margin-right: 10px;
+  border: 1px solid lightgrey;
+}
+
+.footer__info__company-item, .footer__info__privacy-item {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.footer__info__company-item:hover, .footer__info__privacy-item:hover {
+  color: grey;
+}
+/*# sourceMappingURL=styles.css.map */

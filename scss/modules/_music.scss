@@ -1,0 +1,115 @@
+.music {
+    justify-content: space-between;
+    padding-top: 60px;
+
+    &__charts{
+
+        &__us {
+            background: url('../images/chart-discovery.png') no-repeat;
+            background-size: contain;
+            width: 340px;
+            height: 160px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-left: 10px;
+
+            .title-chart {
+                color: white;
+            }
+        }
+
+        &__ger {
+            background: url('../images/chart-country.png') no-repeat;
+            background-size: contain;
+            width: 340px;
+            height: 160px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-left: 10px;
+
+            .title-chart {
+                color: blue;
+            }
+        }
+
+        &__global {
+            background: url('../images/chart-global.png') no-repeat;
+            background-size: contain;
+            width: 340px;
+            height: 160px;
+            padding-top: 10px;
+            padding-left: 10px;
+
+            .title-chart {
+                color: rgb(71, 179, 241);
+            }
+        }
+    }
+
+    &__list {
+
+        &__item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid lightgrey;
+            padding-bottom: 10px;
+            margin-top: 10px;
+
+            .name {
+                font-weight: 700;
+                font-size: 16px;
+                padding-bottom: 4px;
+            }
+
+            .author {
+                padding-top: 4px;
+                color: #949494;
+                font-size: 16px;
+            }
+        }
+
+        &-number {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        &__image {
+            margin: 0 20px;
+        }
+    }
+}
+
+.showmore {
+    margin-top: 40px;
+    background: rgb(0, 136, 255);
+    position: relative;
+    left: 40%;
+}
+
+.button-text {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 17px 30px;
+
+}
+
+.main-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.title-chart {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle-chart {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
