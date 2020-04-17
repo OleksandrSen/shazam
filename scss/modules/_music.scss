@@ -10,8 +10,7 @@
             width: 340px;
             height: 160px;
             margin-bottom: 20px;
-            padding-top: 10px;
-            padding-left: 10px;
+            @include padding(10px, 10px);
 
             &:hover {
                 filter: brightness(0.85);
@@ -28,8 +27,7 @@
             width: 340px;
             height: 160px;
             margin-bottom: 20px;
-            padding-top: 10px;
-            padding-left: 10px;
+            @include padding(10px, 10px);
 
             &:hover {
                 filter: brightness(0.85);
@@ -45,8 +43,7 @@
             background-size: contain;
             width: 340px;
             height: 160px;
-            padding-top: 10px;
-            padding-left: 10px;
+            @include padding(10px, 10px);
 
             &:hover {
                 filter: brightness(0.85);

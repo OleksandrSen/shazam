@@ -582,16 +582,18 @@ body, html {
 }
 
 .social {
-  width: 40px;
-  height: 40px;
+  margin: 20px 0;
+}
+
+.social-icons {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  margin-right: 20px;
 }
 
 .footer__info__social {
   text-align: center;
   margin-bottom: 60px;
-}
-
-.social-icons {
-  margin: 20px 0;
 }
 /*# sourceMappingURL=styles.css.map */
