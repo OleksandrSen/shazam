@@ -21,10 +21,13 @@
 <body>
 	<header class="header">
 		<nav class="navigation">
-			<svg class="logopic">
-				<use xlink:href="images/icons-sprite.svg#logoblack"></use>
-			</svg>
-			<i class="burger-menu"><span></span></i>
+			<a href="#"><svg class="logopic">
+					<use xlink:href="images/icons-sprite.svg#logoblack"></use>
+				</svg></a>
+			<input type="checkbox" id="menu" class="navigation__input">
+			<label for="menu" class="navigation__menu">
+				<i class="burger-menu"><span></span></i>
+			</label>
 			<ul class="menu">
 				<li class="menu__item">
 					<a href="#" class="menu__link">my library</a>
@@ -36,8 +39,6 @@
 					<a href="#" class="menu__link">charts</a>
 				</li>
 			</ul>
-			<input type="checkbox" id="menu" class="navigation__input">
-			<label for="menu" class="navigation__menu"></label>
 		</nav>
 		<div class="search">
 			<input class="searcharea" type="text" placeholder="Search for music">
@@ -229,9 +230,9 @@
 		<div class="container">
 			<div class="row footer__info">
 				<div class="col-12 col-md-6 footer__info-logo">
-					<svg class="logo-footer">
-						<use xlink:href="images/icons-sprite.svg#logo"></use>
-					</svg>
+					<a href="#"><svg class="logo-footer">
+							<use xlink:href="images/icons-sprite.svg#logo"></use>
+						</svg></a>
 					<div class="lang">
 						<select class="select-lang" name="language" id="">
 							<option>Language</option>
@@ -260,6 +261,28 @@
 						<li class="footer__info__privacy-item">Приватность</li>
 						<li class="footer__info__privacy-item">Управление данными</li>
 					</ul>
+				</div>
+			</div>
+			<div class="row footer__row">
+				<div class="col-6 offset-3 footer__info__social">
+					<div class="subscribe">Подпишись на нас</div>
+					<div class="social-icons">
+						<a href="#"><svg class="social">
+								<use xlink:href="images/icons-sprite.svg#facebook"></use>
+							</svg></a>
+						<a href="#"><svg class="social">
+								<use xlink:href="images/icons-sprite.svg#twitter"></use>
+							</svg></a>
+						<a href="#"><svg class="social">
+								<use xlink:href="images/icons-sprite.svg#instagram"></use>
+							</svg></a>
+						<a href="#"><svg class="social">
+								<use xlink:href="images/icons-sprite.svg#snapchat"></use>
+							</svg></a>
+					</div>
+					<div class="copyright">
+						© 2020 Apple Inc. и связанные компании | Социальная ответственность
+					</div>
 				</div>
 			</div>
 		</div>

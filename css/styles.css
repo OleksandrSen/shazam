@@ -131,6 +131,12 @@ body, html {
   letter-spacing: .5px;
 }
 
+@media (max-width: 880px) {
+  .menu__link {
+    display: none;
+  }
+}
+
 .menu__link:hover {
   color: #05adca;
 }
@@ -207,6 +213,12 @@ body, html {
   margin-right: 30px;
 }
 
+@media (max-width: 880px) {
+  .title .select {
+    width: 200px;
+  }
+}
+
 .music {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -224,6 +236,11 @@ body, html {
   padding-left: 10px;
 }
 
+.music__charts__us:hover {
+  -webkit-filter: brightness(0.85);
+          filter: brightness(0.85);
+}
+
 .music__charts__us .title-chart {
   color: white;
 }
@@ -236,6 +253,11 @@ body, html {
   margin-bottom: 20px;
   padding-top: 10px;
   padding-left: 10px;
+}
+
+.music__charts__ger:hover {
+  -webkit-filter: brightness(0.85);
+          filter: brightness(0.85);
 }
 
 .music__charts__ger .title-chart {
@@ -251,6 +273,11 @@ body, html {
   padding-left: 10px;
 }
 
+.music__charts__global:hover {
+  -webkit-filter: brightness(0.85);
+          filter: brightness(0.85);
+}
+
 .music__charts__global .title-chart {
   color: #47b3f1;
 }
@@ -264,7 +291,54 @@ body, html {
           align-items: center;
   border-bottom: 1px solid lightgrey;
   padding-bottom: 10px;
+  padding-top: 10px;
   margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.music__list__item::before {
+  content: '';
+  background: white;
+  background-image: url("../images/play.svg");
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50;
+  left: -200px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.music__list__item::after {
+  content: '';
+  background: url("../images/apple.svg") no-repeat;
+  width: 73px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -1000px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.music__list__item:hover {
+  background: #eeecec;
+}
+
+.music__list__item:hover .name {
+  color: #00b7ff;
+}
+
+.music__list__item:hover::before {
+  left: 5px;
+}
+
+.music__list__item:hover::after {
+  right: 10px;
 }
 
 .music__list__item .name {
@@ -282,6 +356,7 @@ body, html {
 .music__list-number {
   font-weight: 700;
   font-size: 20px;
+  padding-left: 10px;
 }
 
 .music__list__image {
@@ -293,6 +368,10 @@ body, html {
   background: #0088ff;
   position: relative;
   left: 40%;
+}
+
+.showmore:hover {
+  background: #00c5f7;
 }
 
 .button-text {
@@ -367,5 +446,19 @@ body, html {
 
 .footer__info__company-item:hover, .footer__info__privacy-item:hover {
   color: grey;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__info__social {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.social-icons {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=styles.css.map */

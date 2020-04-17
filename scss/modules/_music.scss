@@ -13,6 +13,10 @@
             padding-top: 10px;
             padding-left: 10px;
 
+            &:hover {
+                filter: brightness(0.85);
+            }
+
             .title-chart {
                 color: white;
             }
@@ -27,6 +31,10 @@
             padding-top: 10px;
             padding-left: 10px;
 
+            &:hover {
+                filter: brightness(0.85);
+            }
+
             .title-chart {
                 color: blue;
             }
@@ -39,6 +47,10 @@
             height: 160px;
             padding-top: 10px;
             padding-left: 10px;
+
+            &:hover {
+                filter: brightness(0.85);
+            }
 
             .title-chart {
                 color: rgb(71, 179, 241);
@@ -53,7 +65,52 @@
             align-items: center;
             border-bottom: 1px solid lightgrey;
             padding-bottom: 10px;
+            padding-top: 10px;
             margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                background: white;
+                background-image: url('../images/play.svg');
+                width: 33px;
+                height: 33px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50;
+                left: -200px;
+                transition: .3s;
+            }
+
+            &::after {
+                content: '';
+                background: url('../images/apple.svg') no-repeat;
+                width: 73px;
+                height: 30px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -1000px;
+                transition: .3s;
+            }
+
+            &:hover {
+                background: rgb(238, 236, 236);
+
+                .name {
+                    color: rgb(0, 183, 255);
+                }
+
+                &::before {
+                    left: 5px;
+                }
+
+                &::after {
+                    right: 10px;
+                }
+
+            }
 
             .name {
                 font-weight: 700;
@@ -71,6 +128,7 @@
         &-number {
             font-weight: 700;
             font-size: 20px;
+            padding-left: 10px;
         }
 
         &__image {
@@ -84,6 +142,10 @@
     background: rgb(0, 136, 255);
     position: relative;
     left: 40%;
+
+    &:hover {
+        background: rgb(0, 197, 247);
+    }
 }
 
 .button-text {

@@ -35,6 +35,10 @@
     font-size: 14px;
     letter-spacing: .5px;
 
+    @media (max-width: 880px) {
+        display: none;
+    }
+
     &:hover {
         color: rgb(5, 173, 202);
     }
@@ -66,3 +70,4 @@
     top: 10%;
     right: 5%;
 }
+
