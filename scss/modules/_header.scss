@@ -10,7 +10,127 @@
 }
 
 .navigation {
+
+    &__menu {
+        @include pos(fixed, $t: 15px, $r: 3%, $z: 99);
+        background: rgba(255, 255, 255, .9);
+        padding: 10px;
+        transition: .3s;
+
+        @media (min-width: $desktop) {
+            display: none;
+        }
+    }
+
+    &__input {
+        display: none;
+        &:checked {
+            + .navigation__menu {
+                width: 56px;
+                right: 250px;
+    
+                .burger-menu {
+                    span {
+                        display: none;
+                    }
+    
+                    &::before {
+                        content: '';
+                        transform: rotate(47deg);
+                    }
+    
+                    &::after {
+                        content: '';
+                        transform: rotate(-47deg);
+                    }
+                }
+            }
+            ~ .menu {
+                right: 0;
+            }
+        }
+        } 
+}
+
+.menu {
     display: flex;
+    justify-content: center;
+
+    @media (max-width: $desktop) {
+        @include pos(fixed, $z: 1, $t: 0, $r: -250px);
+        @include size(250px, 100%);
+        background: rgba(255, 255, 255, .9);
+        transition: .3s;
+        padding-top: 25px;
+        display: block;
+    }
+
+    &__item {
+        text-transform: uppercase;
+        margin: 0 20px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    &__link {
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        transition: .3s;
+        text-transform: uppercase;
+        padding: 20px 20px;
+        color: black;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: .5px;
+
+        @media (max-width: $desktop) {
+            display: block;
+            padding: 20px 0;
+            font-size: 18px;
+        }
+        &:hover {
+            color: rgb(5, 173, 202);
+        }
+    }
+
+}
+
+.burger-menu {
+    @mixin line($top: 0) {
+        background: rgb(30, 155, 238);
+        border-radius: 3px;
+        position: absolute;
+        transition: .3s;
+        top: $top;
+        @include size(100%, 5px);
+    }
+
+    @include size(50px, 40px);
+    display: block;
+    position: relative;
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+
+    span {
+        display: block;
+        transform: translateY(-50%);
+        @include line(50%);
+    }
+
+    &::before {
+        content: '';
+        @include line();
+        transform-origin: 0 0%;
+    }
+
+    &::after {
+        content: '';
+        @include line(calc(100% - 5px));
+        transform-origin: 0 100%;
+    }
 }
 
 .logopic {
@@ -20,39 +140,14 @@
     margin-right: 30px;
 }
 
-.menu {
-    display: flex;
-    left: 15%;
-
-
-    &__link {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 20px 20px;
-    color: #242424;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: .5px;
-
-    @media (max-width: 880px) {
-        display: none;
-    }
-
-    &:hover {
-        color: rgb(5, 173, 202);
-    }
-}
-}
-
-.navigation__input {
-    display: none;
-}
-
 .search {
     position: absolute;
     right: 0;
     top: 30%;
+
+    @media (max-width: $desktop) {
+        right: 14%;
+    }
 }
 
 .searcharea {
@@ -61,6 +156,10 @@
     padding: 10px 10px;
     border-radius: 20px;
     width: 370px;
+
+    @media (max-width: $desktop) {
+        width: 200px;
+    }
 }
 
 .searchpic {
