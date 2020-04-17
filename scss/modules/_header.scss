@@ -158,7 +158,8 @@
     width: 370px;
 
     @media (max-width: $desktop) {
-        width: 200px;
+        width: 0px;
+        opacity: 0;
     }
 }
 
@@ -168,5 +169,10 @@
     position: absolute;
     top: 10%;
     right: 5%;
+    fill: rgb(0, 136, 255);
+
+    @media (max-width: $desktop) {
+        right: 100%;
+    }
 }
 

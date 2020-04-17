@@ -140,6 +140,11 @@
     position: relative;
     left: 40%;
 
+    @media (max-width: $desktop) {
+        left: 20%;
+        margin-bottom: 20px;
+    }
+
     &:hover {
         background: rgb(0, 197, 247);
     }
